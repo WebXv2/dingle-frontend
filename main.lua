@@ -11,7 +11,7 @@ query.on_submit(function(content)
     cards_thing()
 
     local res = fetch({
-		url = "http://10.69.69.69:59281/search.php?q=" .. content,
+		url = "https://buss-search.psr.tf/search.php?q=" .. content,
 		method = "GET",
 		headers = { ["Content-Type"] = "application/json" },
 	})
@@ -34,7 +34,7 @@ get("luck").on_click(function()
     cards_thing()
 
     local res = fetch({
-		url = "http://10.69.69.69:59281/search.php?random",
+		url = "https://buss-search.psr.tf/search.php?random",
 		method = "GET",
 		headers = { ["Content-Type"] = "application/json" },
 	})
